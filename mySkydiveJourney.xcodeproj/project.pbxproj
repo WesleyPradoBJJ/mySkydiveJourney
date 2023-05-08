@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0C3BDB2A092D87000EF3D0 /* LinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C3BDA2A092D87000EF3D0 /* LinkDetailView.swift */; };
+		3A20858F29FAD9850035BC1D /* mySkydiveJourneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */; };
+		3A20859129FAD9850035BC1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20859029FAD9850035BC1D /* ContentView.swift */; };
+		3A20859329FAD9860035BC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20859229FAD9860035BC1D /* Assets.xcassets */; };
+		3A20859629FAD9860035BC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20859529FAD9860035BC1D /* Preview Assets.xcassets */; };
+		3A2A90492A0920BC00710425 /* AddLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A90482A0920BC00710425 /* AddLinkView.swift */; };
+		3A3010F829FFD1FA00C1FF94 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010F729FFD1FA00C1FF94 /* HomeView.swift */; };
+		3A3010FA29FFD2AD00C1FF94 /* LogBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010F929FFD2AD00C1FF94 /* LogBookView.swift */; };
+		3A3010FC29FFD33D00C1FF94 /* LinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010FB29FFD33D00C1FF94 /* LinksView.swift */; };
+		3A3010FE29FFDDF100C1FF94 /* JumpDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010FD29FFDDF100C1FF94 /* JumpDetailView.swift */; };
+		3A30110229FFF3CC00C1FF94 /* AddJumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30110129FFF3CC00C1FF94 /* AddJumpView.swift */; };
+		3A3011052A00084200C1FF94 /* LogBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3011042A00084200C1FF94 /* LogBookModel.swift */; };
+		3A3011072A0008B200C1FF94 /* LogBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3011062A0008B200C1FF94 /* LogBookViewModel.swift */; };
+		3A3011092A0025A900C1FF94 /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3011082A0025A900C1FF94 /* LinksModel.swift */; };
+		3A30110B2A0025E900C1FF94 /* LinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30110A2A0025E900C1FF94 /* LinksViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A0C3BDA2A092D87000EF3D0 /* LinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailView.swift; sourceTree = "<group>"; };
+		3A20858B29FAD9850035BC1D /* mySkydiveJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySkydiveJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mySkydiveJourneyApp.swift; sourceTree = "<group>"; };
+		3A20859029FAD9850035BC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A20859229FAD9860035BC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A20859529FAD9860035BC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A2A90482A0920BC00710425 /* AddLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkView.swift; sourceTree = "<group>"; };
+		3A3010F729FFD1FA00C1FF94 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3A3010F929FFD2AD00C1FF94 /* LogBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookView.swift; sourceTree = "<group>"; };
+		3A3010FB29FFD33D00C1FF94 /* LinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksView.swift; sourceTree = "<group>"; };
+		3A3010FD29FFDDF100C1FF94 /* JumpDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpDetailView.swift; sourceTree = "<group>"; };
+		3A30110129FFF3CC00C1FF94 /* AddJumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJumpView.swift; sourceTree = "<group>"; };
+		3A3011042A00084200C1FF94 /* LogBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookModel.swift; sourceTree = "<group>"; };
+		3A3011062A0008B200C1FF94 /* LogBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookViewModel.swift; sourceTree = "<group>"; };
+		3A3011082A0025A900C1FF94 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
+		3A30110A2A0025E900C1FF94 /* LinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A20858829FAD9850035BC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A0C3BDC2A0936D9000EF3D0 /* MyLogbookViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A3010F929FFD2AD00C1FF94 /* LogBookView.swift */,
+				3A3010FD29FFDDF100C1FF94 /* JumpDetailView.swift */,
+				3A30110129FFF3CC00C1FF94 /* AddJumpView.swift */,
+			);
+			path = MyLogbookViews;
+			sourceTree = "<group>";
+		};
+		3A0C3BDD2A09371A000EF3D0 /* MyLinksViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A3010FB29FFD33D00C1FF94 /* LinksView.swift */,
+				3A0C3BDA2A092D87000EF3D0 /* LinkDetailView.swift */,
+				3A2A90482A0920BC00710425 /* AddLinkView.swift */,
+			);
+			path = MyLinksViews;
+			sourceTree = "<group>";
+		};
+		3A20858229FAD9850035BC1D = {
+			isa = PBXGroup;
+			children = (
+				3A20858D29FAD9850035BC1D /* mySkydiveJourney */,
+				3A20858C29FAD9850035BC1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A20858C29FAD9850035BC1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A20858B29FAD9850035BC1D /* mySkydiveJourney.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A20858D29FAD9850035BC1D /* mySkydiveJourney */ = {
+			isa = PBXGroup;
+			children = (
+				3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */,
+				3A3010FF29FFF0E400C1FF94 /* Views */,
+				3A30110029FFF10B00C1FF94 /* Models */,
+				3A3011032A0007C000C1FF94 /* ViewModel */,
+				3A20859429FAD9860035BC1D /* Preview Content */,
+				3A20859229FAD9860035BC1D /* Assets.xcassets */,
+			);
+			path = mySkydiveJourney;
+			sourceTree = "<group>";
+		};
+		3A20859429FAD9860035BC1D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A20859529FAD9860035BC1D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A3010FF29FFF0E400C1FF94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A20859029FAD9850035BC1D /* ContentView.swift */,
+				3A3010F729FFD1FA00C1FF94 /* HomeView.swift */,
+				3A0C3BDC2A0936D9000EF3D0 /* MyLogbookViews */,
+				3A0C3BDD2A09371A000EF3D0 /* MyLinksViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A30110029FFF10B00C1FF94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A3011042A00084200C1FF94 /* LogBookModel.swift */,
+				3A3011082A0025A900C1FF94 /* LinksModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A3011032A0007C000C1FF94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A3011062A0008B200C1FF94 /* LogBookViewModel.swift */,
+				3A30110A2A0025E900C1FF94 /* LinksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A20858A29FAD9850035BC1D /* mySkydiveJourney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A20859929FAD9860035BC1D /* Build configuration list for PBXNativeTarget "mySkydiveJourney" */;
+			buildPhases = (
+				3A20858729FAD9850035BC1D /* Sources */,
+				3A20858829FAD9850035BC1D /* Frameworks */,
+				3A20858929FAD9850035BC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mySkydiveJourney;
+			productName = mySkydiveJourney;
+			productReference = 3A20858B29FAD9850035BC1D /* mySkydiveJourney.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A20858329FAD9850035BC1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3A20858A29FAD9850035BC1D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 3A20858629FAD9850035BC1D /* Build configuration list for PBXProject "mySkydiveJourney" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A20858229FAD9850035BC1D;
+			productRefGroup = 3A20858C29FAD9850035BC1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A20858A29FAD9850035BC1D /* mySkydiveJourney */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A20858929FAD9850035BC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A20859629FAD9860035BC1D /* Preview Assets.xcassets in Resources */,
+				3A20859329FAD9860035BC1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A20858729FAD9850035BC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A30110B2A0025E900C1FF94 /* LinksViewModel.swift in Sources */,
+				3A3011052A00084200C1FF94 /* LogBookModel.swift in Sources */,
+				3A3010FA29FFD2AD00C1FF94 /* LogBookView.swift in Sources */,
+				3A3010FE29FFDDF100C1FF94 /* JumpDetailView.swift in Sources */,
+				3A30110229FFF3CC00C1FF94 /* AddJumpView.swift in Sources */,
+				3A3010F829FFD1FA00C1FF94 /* HomeView.swift in Sources */,
+				3A3010FC29FFD33D00C1FF94 /* LinksView.swift in Sources */,
+				3A0C3BDB2A092D87000EF3D0 /* LinkDetailView.swift in Sources */,
+				3A20859129FAD9850035BC1D /* ContentView.swift in Sources */,
+				3A3011092A0025A900C1FF94 /* LinksModel.swift in Sources */,
+				3A3011072A0008B200C1FF94 /* LogBookViewModel.swift in Sources */,
+				3A2A90492A0920BC00710425 /* AddLinkView.swift in Sources */,
+				3A20858F29FAD9850035BC1D /* mySkydiveJourneyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A20859729FAD9860035BC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A20859829FAD9860035BC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A20859A29FAD9860035BC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mySkydiveJourney/Preview Content\"";
+				DEVELOPMENT_TEAM = X26KRUA5SY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wesleypradoBJJ.mySkydiveJourney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A20859B29FAD9860035BC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mySkydiveJourney/Preview Content\"";
+				DEVELOPMENT_TEAM = X26KRUA5SY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wesleypradoBJJ.mySkydiveJourney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A20858629FAD9850035BC1D /* Build configuration list for PBXProject "mySkydiveJourney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A20859729FAD9860035BC1D /* Debug */,
+				3A20859829FAD9860035BC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A20859929FAD9860035BC1D /* Build configuration list for PBXNativeTarget "mySkydiveJourney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A20859A29FAD9860035BC1D /* Debug */,
+				3A20859B29FAD9860035BC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A20858329FAD9850035BC1D /* Project object */;
+}
