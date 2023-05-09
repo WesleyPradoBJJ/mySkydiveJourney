@@ -120,7 +120,7 @@ struct AddJumpView: View {
                     }
                     
                     Button(action: {
-                        viewModel.saveJump(jump: LogBookItensModel(title: title, place: place, dropzone: dropzone, date: date, image: image, jumpN: jumpN, aircraft: aircraft, equipment: equipment, altitude: altitude, freefall: freefal, totalFreefall: totalFreefal, description: description))
+                        viewModel.saveJump(jump: LogBookItemsModel(title: title, place: place, dropzone: dropzone, date: date, image: image, jumpN: jumpN, aircraft: aircraft, equipment: equipment, altitude: altitude, freefall: freefal, totalFreefall: totalFreefal, description: description))
                         self.presentationMode.wrappedValue.dismiss() //The Button's action dismisses the DetailView by accessing the PresentationMode environment variable.
                     }) {
                         Text("Add Jump")

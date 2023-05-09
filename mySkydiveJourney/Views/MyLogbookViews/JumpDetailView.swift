@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct JumpDetailView: View {
-    var jump: LogBookItensModel 
+    var jump: LogBookItemsModel 
     
     var body: some View {
         //Botão editar* 

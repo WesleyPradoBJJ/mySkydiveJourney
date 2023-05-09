@@ -8,7 +8,7 @@
 import Foundation
 import _PhotosUI_SwiftUI
 
-struct LogBookItensModel: Identifiable {
+struct LogBookItemsModel: Identifiable {
     let id: String = UUID().uuidString
     var title: String
     var place: String

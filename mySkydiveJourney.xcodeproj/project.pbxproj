@@ -7,40 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A0C3BDB2A092D87000EF3D0 /* LinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C3BDA2A092D87000EF3D0 /* LinkDetailView.swift */; };
 		3A20858F29FAD9850035BC1D /* mySkydiveJourneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */; };
 		3A20859129FAD9850035BC1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20859029FAD9850035BC1D /* ContentView.swift */; };
 		3A20859329FAD9860035BC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20859229FAD9860035BC1D /* Assets.xcassets */; };
 		3A20859629FAD9860035BC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20859529FAD9860035BC1D /* Preview Assets.xcassets */; };
-		3A2A90492A0920BC00710425 /* AddLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A90482A0920BC00710425 /* AddLinkView.swift */; };
 		3A3010F829FFD1FA00C1FF94 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010F729FFD1FA00C1FF94 /* HomeView.swift */; };
 		3A3010FA29FFD2AD00C1FF94 /* LogBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010F929FFD2AD00C1FF94 /* LogBookView.swift */; };
-		3A3010FC29FFD33D00C1FF94 /* LinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010FB29FFD33D00C1FF94 /* LinksView.swift */; };
 		3A3010FE29FFDDF100C1FF94 /* JumpDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3010FD29FFDDF100C1FF94 /* JumpDetailView.swift */; };
 		3A30110229FFF3CC00C1FF94 /* AddJumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30110129FFF3CC00C1FF94 /* AddJumpView.swift */; };
 		3A3011052A00084200C1FF94 /* LogBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3011042A00084200C1FF94 /* LogBookModel.swift */; };
 		3A3011072A0008B200C1FF94 /* LogBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3011062A0008B200C1FF94 /* LogBookViewModel.swift */; };
 		3A3011092A0025A900C1FF94 /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3011082A0025A900C1FF94 /* LinksModel.swift */; };
 		3A30110B2A0025E900C1FF94 /* LinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30110A2A0025E900C1FF94 /* LinksViewModel.swift */; };
+		3A73E2712A0A700800220DB1 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73E2702A0A700800220DB1 /* SafariView.swift */; };
+		3A73E2742A0A723A00220DB1 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73E2732A0A723A00220DB1 /* AFButton.swift */; };
+		3A73E2762A0A727700220DB1 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73E2752A0A727700220DB1 /* XDismissButton.swift */; };
+		3A73E27C2A0A813200220DB1 /* LinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73E27B2A0A813200220DB1 /* LinksView.swift */; };
+		3A73E27E2A0A815900220DB1 /* LinkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73E27D2A0A815900220DB1 /* LinkTitleView.swift */; };
+		3A73E2802A0A8BFA00220DB1 /* LinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73E27F2A0A8BFA00220DB1 /* LinkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A0C3BDA2A092D87000EF3D0 /* LinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailView.swift; sourceTree = "<group>"; };
 		3A20858B29FAD9850035BC1D /* mySkydiveJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySkydiveJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mySkydiveJourneyApp.swift; sourceTree = "<group>"; };
 		3A20859029FAD9850035BC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A20859229FAD9860035BC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A20859529FAD9860035BC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A2A90482A0920BC00710425 /* AddLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkView.swift; sourceTree = "<group>"; };
 		3A3010F729FFD1FA00C1FF94 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3A3010F929FFD2AD00C1FF94 /* LogBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookView.swift; sourceTree = "<group>"; };
-		3A3010FB29FFD33D00C1FF94 /* LinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksView.swift; sourceTree = "<group>"; };
 		3A3010FD29FFDDF100C1FF94 /* JumpDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpDetailView.swift; sourceTree = "<group>"; };
 		3A30110129FFF3CC00C1FF94 /* AddJumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJumpView.swift; sourceTree = "<group>"; };
 		3A3011042A00084200C1FF94 /* LogBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookModel.swift; sourceTree = "<group>"; };
 		3A3011062A0008B200C1FF94 /* LogBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookViewModel.swift; sourceTree = "<group>"; };
 		3A3011082A0025A900C1FF94 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
 		3A30110A2A0025E900C1FF94 /* LinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewModel.swift; sourceTree = "<group>"; };
+		3A73E2702A0A700800220DB1 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		3A73E2732A0A723A00220DB1 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		3A73E2752A0A727700220DB1 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		3A73E27B2A0A813200220DB1 /* LinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksView.swift; sourceTree = "<group>"; };
+		3A73E27D2A0A815900220DB1 /* LinkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTitleView.swift; sourceTree = "<group>"; };
+		3A73E27F2A0A8BFA00220DB1 /* LinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +73,9 @@
 		3A0C3BDD2A09371A000EF3D0 /* MyLinksViews */ = {
 			isa = PBXGroup;
 			children = (
-				3A3010FB29FFD33D00C1FF94 /* LinksView.swift */,
-				3A0C3BDA2A092D87000EF3D0 /* LinkDetailView.swift */,
-				3A2A90482A0920BC00710425 /* AddLinkView.swift */,
+				3A73E27B2A0A813200220DB1 /* LinksView.swift */,
+				3A73E27D2A0A815900220DB1 /* LinkTitleView.swift */,
+				3A73E27F2A0A8BFA00220DB1 /* LinkDetailView.swift */,
 			);
 			path = MyLinksViews;
 			sourceTree = "<group>";
@@ -94,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */,
+				3A73E2722A0A721400220DB1 /* Buttons */,
+				3A73E26F2A0A6FD500220DB1 /* UIKit Components */,
 				3A3010FF29FFF0E400C1FF94 /* Views */,
 				3A30110029FFF10B00C1FF94 /* Models */,
 				3A3011032A0007C000C1FF94 /* ViewModel */,
@@ -138,6 +146,23 @@
 				3A30110A2A0025E900C1FF94 /* LinksViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A73E26F2A0A6FD500220DB1 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A73E2702A0A700800220DB1 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		3A73E2722A0A721400220DB1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3A73E2732A0A723A00220DB1 /* AFButton.swift */,
+				3A73E2752A0A727700220DB1 /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,15 +239,18 @@
 				3A3011052A00084200C1FF94 /* LogBookModel.swift in Sources */,
 				3A3010FA29FFD2AD00C1FF94 /* LogBookView.swift in Sources */,
 				3A3010FE29FFDDF100C1FF94 /* JumpDetailView.swift in Sources */,
+				3A73E27C2A0A813200220DB1 /* LinksView.swift in Sources */,
 				3A30110229FFF3CC00C1FF94 /* AddJumpView.swift in Sources */,
 				3A3010F829FFD1FA00C1FF94 /* HomeView.swift in Sources */,
-				3A3010FC29FFD33D00C1FF94 /* LinksView.swift in Sources */,
-				3A0C3BDB2A092D87000EF3D0 /* LinkDetailView.swift in Sources */,
+				3A73E27E2A0A815900220DB1 /* LinkTitleView.swift in Sources */,
+				3A73E2712A0A700800220DB1 /* SafariView.swift in Sources */,
 				3A20859129FAD9850035BC1D /* ContentView.swift in Sources */,
 				3A3011092A0025A900C1FF94 /* LinksModel.swift in Sources */,
+				3A73E2802A0A8BFA00220DB1 /* LinkDetailView.swift in Sources */,
 				3A3011072A0008B200C1FF94 /* LogBookViewModel.swift in Sources */,
-				3A2A90492A0920BC00710425 /* AddLinkView.swift in Sources */,
+				3A73E2742A0A723A00220DB1 /* AFButton.swift in Sources */,
 				3A20858F29FAD9850035BC1D /* mySkydiveJourneyApp.swift in Sources */,
+				3A73E2762A0A727700220DB1 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

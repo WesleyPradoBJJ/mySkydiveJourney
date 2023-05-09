@@ -2,41 +2,45 @@
 //  LinkDetailView.swift
 //  mySkydiveJourney
 //
-//  Created by Wesley Prado on 08/05/2023.
+//  Created by Wesley Prado on 09/05/2023.
 //
 
 import SwiftUI
 
 struct LinkDetailView: View {
-    var link: LinksItensModel
+    
+    var framework: FrameworkLinks
+    @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
     
     var body: some View {
         VStack{
-            NavigationStack{
-                Image(link.image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200)
-                
-                VStack{
-                    Text(link.titleLink)
-                        .font(.title)
-                        .fontWeight(.bold)
-                    
-                    Link("\(link.page)", destination: URL(string: "\(link.page)")!)
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                    Text(link.description)
-                        .fontWeight(.light)
-                        
-                }
+            
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
+            
+            Spacer()
+            
+            LinkTitleView(framework: framework)
+            Text(framework.description)
+                .font(.body)
+                .padding()
+            
+            Spacer()
+            
+            Button{
+                isShowingSafariView = true
+            } label: {
+                AFButton(title: "Learn More")
             }
         }
+        .sheet(isPresented: $isShowingSafariView, content: {
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.google.com")!)
+        })
     }
 }
 
 struct LinkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LinkDetailView(link: ClassLink().getLink(index: 0))
+        LinkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
     }
 }

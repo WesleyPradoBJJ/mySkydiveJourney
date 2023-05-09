@@ -11,25 +11,25 @@ import _PhotosUI_SwiftUI
 
 class Jump: ObservableObject {
     
-   @Published var jumps: [LogBookItensModel] = [
+   @Published var jumps: [LogBookItemsModel] = [
         
-        LogBookItensModel(
+        LogBookItemsModel(
             title: "My Sydive Journey!", place: "Where?", dropzone: "Dropzone's name!", date: "Day?", image: "parachute",
             jumpN: "01 - AFF or Tandem?", aircraft: "Airplane?", equipment: "Wtf?", altitude: "12.000", freefall: "How many seconds?",
             totalFreefall: "For how long did i fall?", description: "Describe the best experience in your life!")
     ]
     
     
-    func getJump(index: Int) -> LogBookItensModel {
+    func getJump(index: Int) -> LogBookItemsModel {
         return jumps[index]
     }
     
     
-    func getAllJumps() -> [LogBookItensModel] {
+    func getAllJumps() -> [LogBookItemsModel] {
         return jumps
     }
     
-    func saveJump(jump:LogBookItensModel) {
+    func saveJump(jump:LogBookItemsModel) {
         jumps.append(jump)
     }
     
