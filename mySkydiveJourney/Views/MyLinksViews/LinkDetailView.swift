@@ -39,6 +39,9 @@ struct LinkDetailView: View {
     }
 }
 
+
+//MARK: - Preview
+
 struct LinkDetailView_Previews: PreviewProvider {
     static var previews: some View {
         LinkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))

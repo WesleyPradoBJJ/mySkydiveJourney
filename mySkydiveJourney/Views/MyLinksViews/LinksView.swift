@@ -36,6 +36,7 @@ struct LinksView: View {
 
 
 //MARK: - Preview
+
 struct LinksView_Previews: PreviewProvider {
     static var previews: some View {
         LinksView()

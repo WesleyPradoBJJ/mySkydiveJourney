@@ -23,8 +23,7 @@ struct AddJumpView: View {
     @State var freefal = ""
     @State var totalFreefal = ""
     @State var description = ""
-    @State var selectedItems: [PhotosPickerItem] = []
-    @State var data: Data?
+   @StateObject var imagePicker = ImagePicker()
     
     @Environment(\.presentationMode) var presentationMode // PresentationMode environment variable.
     @EnvironmentObject var viewModel: Jump
@@ -35,10 +34,10 @@ struct AddJumpView: View {
             
             ScrollView{
                  
-                Image("msj")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250)
+                Text("ADD Jump:")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
                 
                 TextField("Title", text: $title)
                     .padding(10)
@@ -102,22 +101,17 @@ struct AddJumpView: View {
                     
                 }
                 
-                VStack{
-                    if let data = data, let uiimage = UIImage(data: data){
-                        Image(uiImage: uiimage)
-                            .resizable()
-                    }
-                    Spacer()
-                    PhotosPicker(selection: $selectedItems,
-                                 maxSelectionCount: 1,
-                                 matching: .images
-                    ){
-                        Text("Upload Image")
-                            .foregroundColor(.black)
-                            .fontWeight(.bold)
-                            .padding()
-                            .cornerRadius(10)
-                    }
+                if let image = imagePicker.image {
+                    image
+                        .resizable()
+                        .scaledToFit()
+                } 
+                PhotosPicker(selection: $imagePicker.imageSelection,
+                             matching: .images,
+                             photoLibrary: .shared()) {
+                    Text("Upload photo")
+                        .imageScale(.small)
+                }
                     
                     Button(action: {
                         viewModel.saveJump(jump: LogBookItemsModel(title: title, place: place, dropzone: dropzone, date: date, image: image, jumpN: jumpN, aircraft: aircraft, equipment: equipment, altitude: altitude, freefall: freefal, totalFreefall: totalFreefal, description: description))
@@ -136,7 +130,6 @@ struct AddJumpView: View {
             }
         }
     }
-}
 
 
 //MARK: - Preview

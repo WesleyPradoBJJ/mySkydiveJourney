@@ -96,7 +96,7 @@ struct MockData {
                         imageName: "instagram",
                         urlString: "https://www.instagram.com/cookiehelmets/", description: "Cookie instagram account. Follow us!"),
         
-        FrameworkLinks (name: "Elite rigging academy",
+        FrameworkLinks (name: "Elite Rigging Academy",
                         subName: "Elite's Website",
                         imageName: "elite",
                         urlString: "https://www.eliteriggingacademy.com/", description: "It’s simple really… We have the most experienced staff in the parachute rigging industry! Derek Thomas with 40+ years in the manufacturing and rigging industry and is the former owner of Sun Path Products, Inc., manufacturer of the Javelin harness/container system and has assembled a dedicated team of rigging and industry professionals.This amazing team of instructors and examiners at Elite Rigging Academy will not only make sure you graduate with your FAA Parachute Riggers Certificate in hand, but also that you possess the skills, knowledge to conduct yourself professionally as a Senior or Master Parachute Rigger.")

@@ -11,7 +11,7 @@ struct JumpDetailView: View {
     var jump: LogBookItemsModel 
     
     var body: some View {
-        //Botão editar* 
+        
         ScrollView{
             VStack(spacing: 60){
                 

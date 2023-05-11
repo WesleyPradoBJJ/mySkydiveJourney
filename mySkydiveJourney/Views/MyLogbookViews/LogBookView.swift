@@ -41,9 +41,9 @@ struct LogBookView: View {
                 
                 .navigationBarTitle("My Logbook")
                 .navigationBarItems(
-                    leading: EditButton().fontWeight(.bold),
+                    leading: EditButton(),
                     trailing: NavigationLink("Add Jump", destination: AddJumpView())
-                        .fontWeight(.bold)
+                        
                 )
             }
         }

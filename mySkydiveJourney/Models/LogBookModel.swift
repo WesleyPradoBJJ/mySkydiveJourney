@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import _PhotosUI_SwiftUI
 
 struct LogBookItemsModel: Identifiable {
     let id: String = UUID().uuidString
@@ -22,6 +21,5 @@ struct LogBookItemsModel: Identifiable {
     var freefall: String
     var totalFreefall: String
     var description: String
-    var selectedItems: [PhotosPickerItem]?
 }
 

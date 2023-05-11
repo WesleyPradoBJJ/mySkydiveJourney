@@ -38,6 +38,7 @@ struct LinkTitleView: View {
 }
 
 //MARK: -Preview
+
 struct LinkTitleView_Previews: PreviewProvider {
     static var previews: some View {
         LinkTitleView(framework: MockData.sampleFramework)
