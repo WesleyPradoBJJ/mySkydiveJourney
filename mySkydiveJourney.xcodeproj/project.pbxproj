@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A20858F29FAD9850035BC1D /* mySkydiveJourneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */; };
-		3A20859129FAD9850035BC1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20859029FAD9850035BC1D /* ContentView.swift */; };
 		3A20859329FAD9860035BC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20859229FAD9860035BC1D /* Assets.xcassets */; };
 		3A20859629FAD9860035BC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20859529FAD9860035BC1D /* Preview Assets.xcassets */; };
 		3A2A53412A0BBB1000FE14B0 /* ImagePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A53402A0BBB1000FE14B0 /* ImagePickerModel.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		3A20858B29FAD9850035BC1D /* mySkydiveJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySkydiveJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A20858E29FAD9850035BC1D /* mySkydiveJourneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mySkydiveJourneyApp.swift; sourceTree = "<group>"; };
-		3A20859029FAD9850035BC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A20859229FAD9860035BC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A20859529FAD9860035BC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A2A53402A0BBB1000FE14B0 /* ImagePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerModel.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				3A2A53602A0D06AC00FE14B0 /* LoginView.swift */,
-				3A20859029FAD9850035BC1D /* ContentView.swift */,
 				3A3010F729FFD1FA00C1FF94 /* HomeView.swift */,
 				3A0C3BDC2A0936D9000EF3D0 /* MyLogbookViews */,
 				3A0C3BDD2A09371A000EF3D0 /* MyLinksViews */,
@@ -251,7 +248,6 @@
 				3A3010F829FFD1FA00C1FF94 /* HomeView.swift in Sources */,
 				3A73E27E2A0A815900220DB1 /* LinkTitleView.swift in Sources */,
 				3A73E2712A0A700800220DB1 /* SafariView.swift in Sources */,
-				3A20859129FAD9850035BC1D /* ContentView.swift in Sources */,
 				3A3011092A0025A900C1FF94 /* LinksModel.swift in Sources */,
 				3A2A53612A0D06AC00FE14B0 /* LoginView.swift in Sources */,
 				3A73E2802A0A8BFA00220DB1 /* LinkDetailView.swift in Sources */,

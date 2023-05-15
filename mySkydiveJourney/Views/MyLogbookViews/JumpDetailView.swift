@@ -15,7 +15,7 @@ struct JumpDetailView: View {
         ScrollView{
             VStack(spacing: 60){
                 
-                Image(jump.image)
+                Image(uiImage: jump.image)
                     .resizable()
                     .frame(width: 350, height: 250)
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))

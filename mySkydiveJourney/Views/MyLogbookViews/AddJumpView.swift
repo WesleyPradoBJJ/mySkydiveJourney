@@ -23,7 +23,8 @@ struct AddJumpView: View {
     @State var freefal = ""
     @State var totalFreefal = ""
     @State var description = ""
-   @StateObject var imagePicker = ImagePicker()
+    @State private var addJumpPhotoSelection: PhotosPickerItem?
+    @State var addJumpObject: UIImage?
     
     @Environment(\.presentationMode) var presentationMode // PresentationMode environment variable.
     @EnvironmentObject var viewModel: Jump
@@ -33,7 +34,7 @@ struct AddJumpView: View {
         VStack{
             
             ScrollView{
-                 
+                
                 Text("ADD Jump:")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -101,35 +102,49 @@ struct AddJumpView: View {
                     
                 }
                 
-                if let image = imagePicker.image {
-                    image
+                if let  addJumpObject{
+                    Image(uiImage: addJumpObject)
                         .resizable()
                         .scaledToFit()
-                } 
-                PhotosPicker(selection: $imagePicker.imageSelection,
-                             matching: .images,
-                             photoLibrary: .shared()) {
-                    Text("Upload photo")
-                        .imageScale(.small)
+                        .frame(width: 350, height: 350)
                 }
-                    
-                    Button(action: {
-                        viewModel.saveJump(jump: LogBookItemsModel(title: title, place: place, dropzone: dropzone, date: date, image: image, jumpN: jumpN, aircraft: aircraft, equipment: equipment, altitude: altitude, freefall: freefal, totalFreefall: totalFreefal, description: description))
-                        self.presentationMode.wrappedValue.dismiss() //The Button's action dismisses the DetailView by accessing the PresentationMode environment variable.
-                    }) {
-                        Text("Add Jump")
-                            .foregroundColor(.white)
-                            .padding(.vertical)
-                            .frame(width: UIScreen.main.bounds.width-50)
+                
+                PhotosPicker("Upload photo", selection: $addJumpPhotoSelection)
+                    .onChange(of: addJumpPhotoSelection) { newValue in
+                        Task(priority: .userInitiated) {
+                            if let newValue {
+                                // PhotosPickerItem -> Data -> UIImage -> SwiftUI Image
+                                if let loadedImageData = try? await
+                                    newValue.loadTransferable(type: Data.self),
+                                   let loadedImage = UIImage(data: loadedImageData)
+                                {
+                                    self.addJumpObject = loadedImage
+                                }
+                            }
+                        }
                     }
-                    .background(Color.blue)
-                    .fontWeight(.bold)
-                    .cornerRadius(10)
-                    .padding(.top, 25)
+                
+                
+                Button(action: {
+                    
+                    viewModel.saveJump(jump: LogBookItemsModel(title: title, place: place, dropzone: dropzone, date: date, image: addJumpObject ?? (UIImage(named: "parachute"))! , jumpN: jumpN, aircraft: aircraft, equipment: equipment, altitude: altitude, freefall: freefal, totalFreefall: totalFreefal, description: description))
+                    self.presentationMode.wrappedValue.dismiss() //The Button's action dismisses the DetailView by accessing the PresentationMode environment variable.
+                    
+                }) {
+                    Text("Add Jump")
+                        .foregroundColor(.white)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width-50)
                 }
+                .background(RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(.linearGradient(colors:[.black, .blue], startPoint: .topTrailing, endPoint:.bottomTrailing)))
+                .fontWeight(.bold)
+                .cornerRadius(10)
+                .padding(.top, 25)
             }
         }
     }
+}
 
 
 //MARK: - Preview

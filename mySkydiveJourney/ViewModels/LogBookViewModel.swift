@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import _PhotosUI_SwiftUI
+import SwiftUI
 
 
 class Jump: ObservableObject {
@@ -14,7 +14,7 @@ class Jump: ObservableObject {
    @Published var jumps: [LogBookItemsModel] = [
         
         LogBookItemsModel(
-            title: "My Sydive Journey!", place: "Where?", dropzone: "Dropzone's name!", date: "Day?", image: "parachute",
+            title: "My Sydive Journey!", place: "Where?", dropzone: "Dropzone's name!", date: "Day?", image: UIImage(named: "parachute")!,
             jumpN: "01 - AFF or Tandem?", aircraft: "Airplane?", equipment: "Wtf?", altitude: "12.000", freefall: "How many seconds?",
             totalFreefall: "For how long did i fall?", description: "Describe the best experience in your life!")
     ]

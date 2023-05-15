@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import PhotosUI
+import SwiftUI
 
 struct LogBookItemsModel: Identifiable {
     let id: String = UUID().uuidString
@@ -13,7 +15,7 @@ struct LogBookItemsModel: Identifiable {
     var place: String
     var dropzone: String
     var date: String
-    var image: String
+    var image: UIImage
     var jumpN: String
     var aircraft: String
     var equipment: String
@@ -21,5 +23,6 @@ struct LogBookItemsModel: Identifiable {
     var freefall: String
     var totalFreefall: String
     var description: String
+    //var photo: UIImage
 }
 

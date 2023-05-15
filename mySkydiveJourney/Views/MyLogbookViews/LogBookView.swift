@@ -28,7 +28,8 @@ struct LogBookView: View {
                                 }
                                 Spacer()
                                 
-                                Image(jump.image)
+                               
+                                Image(uiImage: jump.image)
                                     .resizable()
                                     .frame(width: 100, height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
